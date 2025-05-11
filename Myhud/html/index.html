@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HUD</title>
+    <link rel="stylesheet" href="css/hud.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+
+<div class="voice-container">
+    <div class="voice-icon" id="voice-talking">
+        <i class="fas fa-microphone"></i> TALKING
+    </div>
+    <div class="voice-icon" id="voice-not-talking">
+        <i class="fas fa-microphone-slash"></i> MUTED
+    </div>
+</div>
+
+<body>
+    <div id="info-container">
+        <div id="street-name">Unknown Street</div>
+        <div id="datetime">
+            <span id="time">00:00</span>
+            <span id="date">01/01/2023</span>
+        </div>
+    </div>
+    
+    <div id="hud-container">
+        <div class="hud-item" id="health">
+            <div class="hud-icon"><i class="fas fa-heart"></i></div>
+            <div class="hud-bar">
+                <div class="hud-bar-fill" id="health-fill"></div>
+                <div class="hud-value" id="health-value">100</div>
+            </div>
+        </div>
+        
+        <div class="hud-item" id="hunger">
+            <div class="hud-icon"><i class="fas fa-hamburger"></i></div>
+            <div class="hud-bar">
+                <div class="hud-bar-fill" id="hunger-fill"></div>
+                <div class="hud-value" id="hunger-value">100</div>
+            </div>
+        </div>
+        
+        <div class="hud-item" id="thirst">
+            <div class="hud-icon"><i class="fas fa-tint"></i></div>
+            <div class="hud-bar">
+                <div class="hud-bar-fill" id="thirst-fill"></div>
+                <div class="hud-value" id="thirst-value">100</div>
+            </div>
+        </div>
+        
+        <div class="hud-item" id="armor">
+            <div class="hud-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="hud-bar">
+                <div class="hud-bar-fill" id="armor-fill"></div>
+                <div class="hud-value" id="armor-value">0</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/hud.js"></script>
+</body>
+</html>
